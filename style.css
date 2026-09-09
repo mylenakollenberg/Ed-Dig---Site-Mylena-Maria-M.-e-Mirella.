@@ -132,9 +132,13 @@ footer {
     }
 }
 .logo {
-    width: 150px;
-    height: auto;
+    width: 280px;            /* Largura do retângulo */
+    height: 130px;           /* Altura do retângulo */
+    object-fit: contain;     /* Encaixa o logotipo inteiro dentro do retângulo sem cortar nada */
+    background-color: #fff;  /* Fundo branco suave para destacar a arte */
+    padding: 10px;           /* Espaçamento interno */
+    border-radius: 12px;     /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra delicada no fundo */
     display: block;
-    margin: 0 auto 15px auto;
-    border-radius: 10px;
+    margin: 0 auto 15px auto; /* Centraliza no meio da tela */
 }
