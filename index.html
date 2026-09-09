@@ -8,32 +8,43 @@
 </head>
 <body>
 
-    <header>
-        <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo" style="max-width: 280px; width: 100%; height: auto;">
+    <header class="topo">
+        <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
+        <h1 class="titulo">Shine Skin</h1>
     </header>
 
-    <main class="container">
-        <div class="grid-categorias">
-            <div class="card">
-                <img src="serum.jpg" alt="Peles Sensíveis">
-                <p>Peles Sensíveis</p>
+    <div class="secao-categorias">
+        <h2 class="subtitulo">Categorias</h2>
+        <div class="lista-categorias">
+            <a href="#" class="btn-categoria">Skincare</a>
+            <a href="#" class="btn-categoria">Limpeza Facial</a>
+            <a href="#" class="btn-categoria">Hidratantes</a>
+            <a href="#" class="btn-categoria">Protetor Solar</a>
+        </div>
+    </div>
+
+    <main class="secao-produtos">
+        <h2 class="subtitulo">Produtos em Destaque</h2>
+        <div class="grid-produtos">
+            <div class="card-produto">
+                <h3>Sérum Facial</h3>
+                <p class="preco">R$ 49,90</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
-                <img src="limpeza.jpg" alt="Esfoliante e Diminuidor">
-                <p>Esfoliante e Diminuidor</p>
+            <div class="card-produto">
+                <h3>Gel de Limpeza</h3>
+                <p class="preco">R$ 35,00</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
-                <img src="creme.jpg" alt="Hidratação e Proteção">
-                <p>Hidratação e Proteção</p>
-            </div>
-            <div class="card">
-                <img src="protetor.jpg" alt="Limpeza Facial">
-                <p>Limpeza Facial</p>
+            <div class="card-produto">
+                <h3>Creme Hidratante</h3>
+                <p class="preco">R$ 55,90</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2026 Shine Skin - Todos os direitos reservados.</p>
     </footer>
 
