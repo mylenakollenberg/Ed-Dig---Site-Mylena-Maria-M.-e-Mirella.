@@ -8,40 +8,43 @@
 </head>
 <body>
 
-    <header>
+    <header class="topo">
         <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
-        <h1>Shine Skin</h1>
+        <h1 class="titulo">Shine Skin</h1>
     </header>
 
-    <nav class="categorias">
-        <h2>Categorias</h2>
-        <ul>
-            <li><a href="#">Skincare</a></li>
-            <li><a href="#">Limpeza Facial</a></li>
-            <li><a href="#">Hidratantes</a></li>
-            <li><a href="#">Protetor Solar</a></li>
-        </ul>
-    </nav>
+    <div class="secao-categorias">
+        <h2 class="subtitulo">Categorias</h2>
+        <div class="lista-categorias">
+            <a href="#" class="btn-categoria">Skincare</a>
+            <a href="#" class="btn-categoria">Limpeza Facial</a>
+            <a href="#" class="btn-categoria">Hidratantes</a>
+            <a href="#" class="btn-categoria">Protetor Solar</a>
+        </div>
+    </div>
 
-    <main class="produtos">
-        <h2>Produtos em Destaque</h2>
+    <main class="secao-produtos">
+        <h2 class="subtitulo">Produtos em Destaque</h2>
         <div class="grid-produtos">
-            <div class="card">
+            <div class="card-produto">
                 <h3>Sérum Facial</h3>
-                <p>R$ 49,90</p>
+                <p class="preco">R$ 49,90</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card-produto">
                 <h3>Gel de Limpeza</h3>
-                <p>R$ 35,00</p>
+                <p class="preco">R$ 35,00</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
-            <div class="card">
+            <div class="card-produto">
                 <h3>Creme Hidratante</h3>
-                <p>R$ 55,90</p>
+                <p class="preco">R$ 55,90</p>
+                <button class="btn-comprar">Comprar</button>
             </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2026 Shine Skin - Todos os direitos reservados.</p>
     </footer>
 
