@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #fafafa;
   padding: 20px;
 }
 
-/* Grade organizada para os cartões de produtos */
+/* Centralização e alinhamento em grade */
 .produtos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 }
 
-/* Cartão do produto com alinhamento central */
+/* Estilo individual de cada cartão */
 .card-produto {
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
@@ -30,14 +30,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s ease;
 }
 
-.card-produto:hover {
-  transform: translateY(-4px);
-}
-
-/* Padronização das imagens */
+/* Padronização rigorosa de dimensões e corte */
 .card-produto img {
   width: 100%;
   height: 220px;
