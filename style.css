@@ -1,144 +1,54 @@
-/* Reset básico de margens e fontes */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #fcf9f9; /* Fundo levemente rosado/bege claro */
-    color: #4a4a4a;
-    line-height: 1.6;
+  font-family: sans-serif;
+  background-color: #fafafa;
+  padding: 20px;
 }
 
-/* Estilo do Cabeçalho */
-header {
-    background-color: #e8d5d1; /* Tom pêssego/rosê */
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
+/* Grade organizada para os cartões de produtos */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header h1 {
-    font-size: 3em;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-family: 'Georgia', serif;
+/* Cartão do produto com alinhamento central */
+.card-produto {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
 }
 
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
+.card-produto:hover {
+  transform: translateY(-4px);
 }
 
-/* Seção Quem Somos */
-.about-section {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+/* Padronização das imagens */
+.card-produto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
 }
 
-.about-text {
-    flex: 1;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    color: #c99c95;
-    margin-bottom: 20px;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-/* Seção de Produtos */
-.products-section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.products-section h2 {
-    font-size: 2.2em;
-    color: #c99c95;
-    margin-bottom: 40px;
-}
-
-/* Grid para alinhar os produtos */
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-/* Estilização individual de cada produto (Card) */
-.product-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-}
-
-.product-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.product-card h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.product-card p {
-    font-size: 0.9em;
-    color: #777;
-}
-
-/* Rodapé */
-footer {
-    background-color: #4a4a4a;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-/* Responsividade para celulares */
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-.logo {
-    width: 280px;            /* Largura do retângulo */
-    height: 130px;           /* Altura do retângulo */
-    object-fit: contain;     /* Encaixa o logotipo inteiro dentro do retângulo sem cortar nada */
-    background-color: #fff;  /* Fundo branco suave para destacar a arte */
-    padding: 10px;           /* Espaçamento interno */
-    border-radius: 12px;     /* Bordas levemente arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra delicada no fundo */
-    display: block;
-    margin: 0 auto 15px auto; /* Centraliza no meio da tela */
+.card-produto h3 {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-top: 8px;
 }
