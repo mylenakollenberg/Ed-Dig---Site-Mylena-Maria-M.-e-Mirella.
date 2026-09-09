@@ -3,71 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine Skin | Sua Loja de Skincare</title>
+    <title>Shine Skin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho com Logo -->
-    <header class="top-header">
+    <header>
         <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
         <h1>Shine Skin</h1>
-        <p class="tagline">Sua pele radiante todos os dias</p>
     </header>
 
-    <!-- Menu de Navegação -->
-    <nav class="main-nav">
-        <a href="#categorias">Categorias</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
+    <nav class="categorias">
+        <h2>Categorias</h2>
+        <ul>
+            <li><a href="#">Skincare</a></li>
+            <li><a href="#">Limpeza Facial</a></li>
+            <li><a href="#">Hidratantes</a></li>
+            <li><a href="#">Protetor Solar</a></li>
+        </ul>
     </nav>
 
-    <!-- Banner Principal -->
-    <section class="banner">
-        <h2>Lançamentos de Skincare</h2>
-        <p>Confira nossa linha completa de cuidados faciais.</p>
-    </section>
-
-    <main class="container">
-        <!-- Seção de Categorias -->
-        <section id="categorias" class="section-box">
-            <h2>Categorias</h2>
-            <div class="categories-grid">
-                <div class="category-card">Sabonetes</div>
-                <div class="category-card">Séruns</div>
-                <div class="category-card">Hidratantes</div>
-                <div class="category-card">Protetores</div>
+    <main class="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="grid-produtos">
+            <div class="card">
+                <h3>Sérum Facial</h3>
+                <p>R$ 49,90</p>
             </div>
-        </section>
-
-        <!-- Seção de Produtos (Para não aparecer só categorias) -->
-        <section id="produtos" class="section-box">
-            <h2>Destaques</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-img-placeholder">Sérum Vitamina C</div>
-                    <h3>Sérum Iluminador</h3>
-                    <p class="price">R$ 59,90</p>
-                    <button class="buy-btn">Comprar</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-img-placeholder">Gel de Limpeza</div>
-                    <h3>Gel Facial Purificante</h3>
-                    <p class="price">R$ 42,00</p>
-                    <button class="buy-btn">Comprar</button>
-                </div>
-                <div class="product-card">
-                    <div class="product-img-placeholder">Hidratante Facial</div>
-                    <h3>Creme Facial Nutritivo</h3>
-                    <p class="price">R$ 68,50</p>
-                    <button class="buy-btn">Comprar</button>
-                </div>
+            <div class="card">
+                <h3>Gel de Limpeza</h3>
+                <p>R$ 35,00</p>
             </div>
-        </section>
+            <div class="card">
+                <h3>Creme Hidratante</h3>
+                <p>R$ 55,90</p>
+            </div>
+        </div>
     </main>
 
-    <!-- Rodapé -->
-    <footer id="contato">
+    <footer>
         <p>&copy; 2026 Shine Skin - Todos os direitos reservados.</p>
     </footer>
 
