@@ -8,87 +8,145 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fcf8f8;
     color: #333;
+    line-height: 1.5;
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    display: block;
 }
 
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .logo {
-    width: 280px;
-    height: 130px;
+    width: 250px;
+    height: 120px;
     object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
-.categorias {
+header h1 {
+    color: #d87093;
+    font-size: 1.8rem;
+}
+
+/* Bloco Explicativo do Site */
+.sobre {
     background-color: #ffe4e1;
-    padding: 15px 0;
     text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
 }
 
-.categorias ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.sobre h2 {
+    color: #b22222;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
-.categorias a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 8px 16px;
-    border-radius: 20px;
-    border: 1px solid #ffd1dc;
+.sobre p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 0.95rem;
 }
 
-.produtos {
-    max-width: 900px;
-    margin: 40px auto;
+/* Seção de Categorias com Fotos */
+.categorias, .produtos {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
     padding: 0 20px;
     text-align: center;
 }
 
-.produtos h2 {
-    margin-bottom: 20px;
+.categorias h2, .produtos h2 {
     color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffd1dc;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.grid {
+.grid-categorias {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+.card-categoria {
+    background-color: #fff;
+    border: 1px solid #ffd1dc;
+    border-radius: 10px;
+    padding: 12px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.card-categoria img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.card-categoria span {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Seção dos Produtos */
+.grid-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
 .card {
     background-color: #fff;
     border: 1px solid #eee;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 20px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 240px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-produto {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 .card h3 {
-    font-size: 1rem;
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.descricao-curta {
+    font-size: 0.8rem;
+    color: #777;
     margin-bottom: 10px;
 }
 
 .preco {
     color: #d87093;
     font-weight: bold;
+    font-size: 1.2rem;
     margin-bottom: 12px;
 }
 
@@ -96,16 +154,18 @@ header {
     background-color: #d87093;
     color: #fff;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
+    width: 100%;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     margin-top: 40px;
+    font-size: 0.85rem;
 }

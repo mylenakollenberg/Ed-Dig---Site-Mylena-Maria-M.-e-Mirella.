@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shine Skin</title>
+    <title>Shine Skin - Cuidados com a Pele</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
+        <h1>Shine Skin</h1>
     </header>
 
-    <nav class="categorias">
-        <ul>
-            <li><a href="#">Skincare</a></li>
-            <li><a href="#">Limpeza Facial</a></li>
-            <li><a href="#">Hidratantes</a></li>
-            <li><a href="#">Protetor Solar</a></li>
-        </ul>
-    </nav>
+    <!-- Apresentação / Explicação do site -->
+    <section class="sobre">
+        <h2>Sua pele radiante todos os dias</h2>
+        <p>A Shine Skin é dedicada a trazer o melhor em cuidados faciais. Nossos produtos são desenvolvidos para proporcionar hidratação profunda, limpeza delicada e o brilho natural que sua pele merece.</p>
+    </section>
 
+    <!-- Categorias com Imagem -->
+    <section class="categorias">
+        <h2>Categorias</h2>
+        <div class="grid-categorias">
+            <div class="card-categoria">
+                <img src="limpeza.jpg" alt="Limpeza Facial">
+                <span>Limpeza</span>
+            </div>
+            <div class="card-categoria">
+                <img src="serum.jpg" alt="Séruns">
+                <span>Séruns</span>
+            </div>
+            <div class="card-categoria">
+                <img src="creme.jpg" alt="Hidratantes">
+                <span>Hidratantes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitrine de Produtos Completa -->
     <section class="produtos">
         <h2>Produtos em Destaque</h2>
-        <div class="grid">
+        <div class="grid-produtos">
             <div class="card">
-                <h3>Sérum Facial</h3>
+                <img src="serum.jpg" alt="Sérum Facial" class="img-produto">
+                <h3>Sérum Facial Iluminador</h3>
+                <p class="descricao-curta">Com Vitamina C e Ácido Hialurônico</p>
                 <p class="preco">R$ 49,90</p>
                 <button class="btn-comprar">Comprar</button>
             </div>
             <div class="card">
-                <h3>Gel de Limpeza</h3>
+                <img src="limpeza.jpg" alt="Gel de Limpeza" class="img-produto">
+                <h3>Gel de Limpeza Purificante</h3>
+                <p class="descricao-curta">Com Extrato de Aloe Vera</p>
                 <p class="preco">R$ 35,00</p>
                 <button class="btn-comprar">Comprar</button>
             </div>
             <div class="card">
-                <h3>Creme Hidratante</h3>
+                <img src="creme.jpg" alt="Creme Hidratante" class="img-produto">
+                <h3>Creme Hidratante Nutritivo</h3>
+                <p class="descricao-curta">Hidratação intensa 24 horas</p>
                 <p class="preco">R$ 55,90</p>
                 <button class="btn-comprar">Comprar</button>
             </div>
