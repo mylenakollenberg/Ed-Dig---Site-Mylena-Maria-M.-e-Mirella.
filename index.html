@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shine Skin</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Skin | Sua Loja de Skincare</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="produtos-grid">
-    
-    <div class="card-produto">
-      <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format&fit=crop&q=80" alt="Peles Sensíveis">
-      <h3>Peles Sensíveis</h3>
-    </div>
+    <!-- Cabeçalho com Logo -->
+    <header class="top-header">
+        <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
+        <h1>Shine Skin</h1>
+        <p class="tagline">Sua pele radiante todos os dias</p>
+    </header>
 
-    <div class="card-produto">
-      <img src="https://images.unsplash.com/photo-1608248597309-1f81d1134015?w=500&auto=format&fit=crop&q=80" alt="Esfoliante e Diminuidor">
-      <h3>Esfoliante e Diminuidor</h3>
-    </div>
+    <!-- Menu de Navegação -->
+    <nav class="main-nav">
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-    <div class="card-produto">
-      <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&auto=format&fit=crop&q=80" alt="Hidratação e Proteção">
-      <h3>Hidratação e Proteção</h3>
-    </div>
+    <!-- Banner Principal -->
+    <section class="banner">
+        <h2>Lançamentos de Skincare</h2>
+        <p>Confira nossa linha completa de cuidados faciais.</p>
+    </section>
 
-    <div class="card-produto">
-      <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&auto=format&fit=crop&q=80" alt="Limpeza Facial">
-      <h3>Limpeza Facial</h3>
-    </div>
+    <main class="container">
+        <!-- Seção de Categorias -->
+        <section id="categorias" class="section-box">
+            <h2>Categorias</h2>
+            <div class="categories-grid">
+                <div class="category-card">Sabonetes</div>
+                <div class="category-card">Séruns</div>
+                <div class="category-card">Hidratantes</div>
+                <div class="category-card">Protetores</div>
+            </div>
+        </section>
 
-  </main>
+        <!-- Seção de Produtos (Para não aparecer só categorias) -->
+        <section id="produtos" class="section-box">
+            <h2>Destaques</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img-placeholder">Sérum Vitamina C</div>
+                    <h3>Sérum Iluminador</h3>
+                    <p class="price">R$ 59,90</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-placeholder">Gel de Limpeza</div>
+                    <h3>Gel Facial Purificante</h3>
+                    <p class="price">R$ 42,00</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-placeholder">Hidratante Facial</div>
+                    <h3>Creme Facial Nutritivo</h3>
+                    <p class="price">R$ 68,50</p>
+                    <button class="buy-btn">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2026 Shine Skin - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
