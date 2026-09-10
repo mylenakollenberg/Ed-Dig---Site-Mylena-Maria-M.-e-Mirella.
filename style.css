@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Fundo da Página em Rosa Pastel */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f4f0;
+    background-color: #fbe8ed; /* Cor Rosa Pastel */
     color: #333333;
     line-height: 1.6;
     padding-bottom: 40px;
@@ -39,11 +40,11 @@ header {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #c08552;
+    border: 2px solid #d8829d;
 }
 
 h1 {
-    color: #c08552;
+    color: #b85b78;
     font-size: 2.2rem;
 }
 
@@ -64,7 +65,7 @@ h1 {
     padding: 25px;
     margin-bottom: 25px;
     width: 100%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 3px 10px rgba(184, 91, 120, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,10 +73,10 @@ h1 {
 }
 
 h2 {
-    color: #7a8b7b;
+    color: #8c5366;
     margin-bottom: 15px;
     font-size: 1.5rem;
-    border-bottom: 2px solid #e2ece9;
+    border-bottom: 2px solid #f3d1dc;
     padding-bottom: 6px;
     width: 100%;
     text-align: center;
@@ -115,8 +116,8 @@ p {
 }
 
 .product-item {
-    background-color: #fdfbf7;
-    border: 1px solid #eae5dd;
+    background-color: #fff9fa;
+    border: 1px solid #f2cfd9;
     border-radius: 10px;
     padding: 15px;
     width: 220px;
@@ -125,6 +126,11 @@ p {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
 }
 
 .product-item img {
@@ -138,12 +144,12 @@ p {
 
 .product-item h3 {
     font-size: 1rem;
-    color: #5d6d5e;
+    color: #724252;
 }
 
 /* Link Útil */
 .link-section a {
-    color: #c08552;
+    color: #b85b78;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1rem;
