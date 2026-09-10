@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shine Skin</title>
-</p2>
+    <!-- Vinculando o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Cabeçalho com Logotipo e Nome da Empresa -->
     <header>
-        <img src="logotipo.jpg" alt="Logotipo Shine Skin" class="logo">
+        <div class="header-content">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=200" alt="Logotipo da Shine Skin" class="logo">
+            <h1>Shine Skin</h1>
+        </div>
     </header>
 
     <main class="container">
-        <div class="grid-produtos">
-            <div class="card">
-                <img src="serum.jpg" alt="Peles Sensíveis" class="img-card">
-                <h3>Peles Sensíveis</h3>
-                <p class="preco">R$ 49,90</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="limpeza.jpg" alt="Esfoliante e Diminuidor" class="img-card">
-                <h3>Esfoliante e Diminuidor</h3>
-                <p class="preco">R$ 35,00</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="creme.jpg" alt="Hidratação e Proteção" class="img-card">
-                <h3>Hidratação e Proteção</h3>
-                <p class="preco">R$ 55,90</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="protetor.jpg" alt="Limpeza Facial" class="img-card">
-                <h3>Limpeza Facial</h3>
-                <p class="preco">R$ 42,00</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-        </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Shine Skin - Todos os direitos reservados.</p>
-    </footer>
+        <!-- Imagem Principal / Rosto de Base -->
+        <section class="banner-section">
+            <img src="https://images.unsplash.com/photo-1512290900673-70020120152b?q=80&w=1000" alt="Rosto de mulher recebendo cuidados com a pele" class="hero-image">
+        </section>
+
+        <!-- Seção Quem Somos -->
+        <section class="card">
+            <h2>Quem Somos</h2>
+            <p>A Shine Skin é uma marca dedicada a cuidar da sua saúde estestética e bem-estar. Criamos fórmulas desenvolvidas para destacar a luminosidade natural de cada tipo de pele, combinando tecnologia e ingredientes suaves para o seu dia a dia.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Nossos Produtos</h2>
+            <ul class="products-grid">
+                <li>
+                    <img src="https://images.unsplash.com/photo-1608248597309-45de1787407b?q=80&w=400" alt="Cremes Hidratantes">
+                    <h3>Cremes</h3>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1556228722-d119f018d363?q=80&w=400" alt="Esfoliantes Faciais">
+                    <h3>Esfoliantes</h3>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=400" alt="Produtos para Peles Sensíveis">
+                    <h3>Produtos para Peles Sensíveis</h3>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400" alt="Tônicos e Brumas">
+                    <h3>Tônicos e Brumas</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card link-section">
+            <a href="https://pt.wikipedia.org/wiki/Cuidados_com_a_pele" target="_blank">Saiba mais sobre o nosso setor</a>
+        </section>
+
+        <section class="card">
+            <h2>Contato</h2>
+            <address>
+                E-mail: contato@shineskin.com<br>
+                Telefone: (11) 98765-4321
+            </address>
+        </section>
+
+    </main>
 
 </body>
 </html>

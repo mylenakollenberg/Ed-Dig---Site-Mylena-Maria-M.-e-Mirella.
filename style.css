@@ -1,3 +1,4 @@
+/* Reset Básico para Unificar Estilos */
 * {
     margin: 0;
     padding: 0;
@@ -5,104 +6,129 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fcf8f8;
-    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f4f0;
+    color: #333333;
+    line-height: 1.6;
+    padding-bottom: 40px;
 }
 
-/* Regra global para evitar estouro acidental */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Cabeçalho e Logo */
+/* Cabeçalho */
 header {
-    text-align: center;
-    padding: 25px 0;
     background-color: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
-    margin-bottom: 30px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .logo {
-    width: 260px;
-    height: 120px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Container Principal */
+h1 {
+    color: #c08552;
+    font-size: 2.2rem;
+}
+
+/* Layout Principal */
 .container {
-    max-width: 1100px;
-    margin: 0 auto 40px auto;
-    padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-/* Layout dos Cards */
-.grid-produtos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* Estilo do Card */
 .card {
     background-color: #ffffff;
-    border: 1px solid #f0e4e6;
-    border-radius: 12px;
-    padding: 16px;
-    width: 220px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-/* Trava exata para as imagens ficarem bonitas e uniformes */
-.img-card {
+h2 {
+    color: #7a8b7b;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e2ece9;
+    padding-bottom: 5px;
+}
+
+/* Rosto de Base / Banner */
+.banner-section {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
     width: 100%;
-    height: 180px;
+    height: 320px;
     object-fit: cover;
+    display: block;
+}
+
+/* Grid de Produtos */
+.products-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.products-grid li {
+    background-color: #fdfbf7;
+    border: 1px solid #eae5dd;
     border-radius: 8px;
-    margin-bottom: 12px;
-}
-
-.card h3 {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.preco {
-    color: #d87093;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-}
-
-.btn-comprar {
-    background-color: #d87093;
-    color: #ffffff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333333;
-    color: #ffffff;
+    padding: 15px;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    font-size: 0.85rem;
+}
+
+.products-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.products-grid h3 {
+    font-size: 1rem;
+    color: #5d6d5e;
+}
+
+/* Link Externo */
+.link-section {
+    text-align: center;
+}
+
+.link-section a {
+    color: #c08552;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.link-section a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+address {
+    font-style: normal;
+    color: #555555;
+    font-size: 1rem;
 }
